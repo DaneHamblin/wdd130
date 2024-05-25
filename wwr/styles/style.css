@@ -1,108 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crimson+Text:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #82846D; 
+    font-family: 'Crimson Text', serif, 'Times New Roman';
+    font-size: 22px;
+}
+
+h2 {
+    margin: 0;
+}
+
+header {
+    background-color: #82846D; 
+    font-family: 'Archivo Black', sans-serif, Arial, Helvetica;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-nav a {
-    text-align: center;
-}
-
-#hero-msg h1,
-#hero-msg h4 {
-    text-align: center;
-}
-
-.button-box {
-    text-align: center;
-}
-
-main section {
-    text-align: center;
-}
-
 #background {
     height: 725px;
-}
-
-body {
-    background-color: #82846D; 
-}
-
-header {
-    background-color: #82846D; 
-}
-
-nav a:hover {
-    background-color: #D4AC0D; 
-}
-
-.book,
-.join {
-    background-color: #D4AC0D;
-}
-
-.book:hover,
-.join:hover {
-    background-color: #D4AC0D;
-}
-
-#background {
-    background-color: #82846D; 
-}
-
-.msg {
     background-color: #82846D;
+}
+
+.home-title, 
+.msg h2 {
+    font-family: 'Archivo Black', sans-serif, Arial, Helvetica;
+    font-size: 2em;
+}
+
+.home-title {
+    margin-top: 10px;
+}
+
+.book, 
+.join {
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid #000;
+    border-radius: 5px;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.rivers-card, 
+.camping-card, 
+.rapids-card {
+    margin: 200px 0;
 }
 
 footer {
-    background-color: #82846D;
-}
-
-.logo {
-    width: 80px;
-}
-
-.icon {
-    width: 80px;
-}
-
-#hero-img {
-    width: 100%;
-}
-
-nav a {
-    text-align: center;
-    color: #333;
-    text-decoration: none;
-}
-
-.book,
-.join {
-    text-decoration: none;
-}
-
-footer a {
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.book:hover,
-.join:hover {
-    text-decoration: underline;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    font-size: 1.2em;
-}
-
-footer p a:hover {
-    text-decoration: underline;
+    margin-top: 200px;
 }
