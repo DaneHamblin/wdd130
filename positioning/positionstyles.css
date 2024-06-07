@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  align-content: center;
   gap: 20px; /* Add gap if needed for spacing between boxes */
 }
 
