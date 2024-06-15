@@ -15,41 +15,73 @@ body {
 
 h2 {
     margin: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 header {
     background-color: #82846D; 
     font-family: 'Archivo Black', sans-serif, Arial, Helvetica;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 #content {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 #background {
     height: 725px;
     background-color: #82846D;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .home-title, 
 .msg h2 {
     font-family: 'Archivo Black', sans-serif, Arial, Helvetica;
     font-size: 2em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
                             
 .home-title {
     margin-top: 10px;
     font-size: 2em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 #logo_link {
     padding: 5px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 nav a {
     padding: 35px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .book, 
@@ -59,41 +91,77 @@ nav a {
     border-radius: 5px;
     font-size: 18px;
     padding: 15px 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .icon {
     padding-top: 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .msg {
     padding: 35px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .msg p{
     font-family: 'Archivo Black', sans-serif, Arial, Helvetica;
     font-size: .8em;
     padding-bottom: 15px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 .card-img {
     border: 10px solid #000;
     border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 main section img {
     box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .rivers-card, 
 .camping-card, 
 .rapids-card {
     margin: 200px 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 footer {
     margin-top: 200px;
     padding: 25px 50px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 footer .social img {
     padding-top: 15px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
