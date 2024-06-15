@@ -2,11 +2,11 @@
 @import url('https://fonts.google.com/specimen/Rubik');
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: #82846D; 
     font-family: 'Crimson Text', serif, 'Times New Roman';
     font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -39,16 +39,35 @@ header {
     margin-top: 10px;
 }
 
+#logo_link {
+    padding: 5px;
+}
+
+nav a {
+    padding: 35px;
+}
+
 .book, 
 .join {
     font-family: 'Archivo Black', sans-serif, Arial, Helvetica;
     margin-top: 50px;
     border-radius: 5px;
     font-size: 18px;
+    padding: 15px 30px;
 }
+
+.icon {
+    padding-top: 10px;
+}
+
+.msg {
+    padding: 35px;
+}
+
 .msg p{
     font-family: 'Archivo Black', sans-serif, Arial, Helvetica;
     font-size: .8em;
+    padding-bottom: 15px;
 }
 .card-img {
     border: 10px solid #000;
@@ -67,4 +86,9 @@ main section img {
 
 footer {
     margin-top: 200px;
+    padding: 25px 50px;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
