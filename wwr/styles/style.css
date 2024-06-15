@@ -8,6 +8,9 @@ body {
     margin: 0;
     padding: 0;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 h2 {
