@@ -9,6 +9,7 @@ nav a {
 }
 hero-msg h1, hero-msg h4{
     text-align: center;
+    font-family: Courier New (monospace);
 }
 .button-box{
     text-align: center;
