@@ -32,6 +32,9 @@ head {
     color: white;
     font-family: Courier New (monospace);
 }
+title {
+        font-family: Courier New (monospace);
+}
 header {
     background-color:#2083D5;
     color: white;
