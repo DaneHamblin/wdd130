@@ -25,10 +25,12 @@ main section {
 body {
     background-color: #2083D5; 
     color: white;
+    font-family: Times New Roman (serif), Helvetica, sans-serif;
 }
 header {
     background-color:#2083D5;
     color: white;
+    font-family: Courier New (monospace);
 }
 nav a:hover {
     background-color: #2083D5;
