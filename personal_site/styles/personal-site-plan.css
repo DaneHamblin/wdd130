@@ -2,15 +2,21 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url('https://www.1001fonts.com/video-game-fonts.html');
+
 @font-face {
     font-family: 'Pixel Game';
-    src: url("C:\Users\daneyboy\Documents\wdd130\personal_site\fonts\Pixel Game.otf") format('truetype');
+    src: url("fonts/PixelGame.woff2") format('woff2'),
+         url("fonts/PixelGame.woff") format('woff'),
+         url("fonts/PixelGame.otf") format('opentype'); 
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Game Paused DEMO';
-    src: url("C:\Users\daneyboy\Documents\wdd130\personal_site\fonts\Game Paused DEMO.otf") format('truetype');
+    src: url("fonts/GamePausedDemo.woff2") format('woff2'),
+         url("fonts/GamePausedDemo.woff") format('woff'),
+         url("fonts/GamePausedDemo.otf") format('opentype'); 
     font-weight: normal;
     font-style: normal;
 }
