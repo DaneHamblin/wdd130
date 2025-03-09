@@ -3,23 +3,6 @@ Any spaces in your font name should be replaced with a +.
 Fonts are separated by a | */
 @import url('https://www.1001fonts.com/video-game-fonts.html');
 
-@font-face {
-    font-family: 'Pixel Game';
-    src: url("fonts/PixelGame.woff2") format('woff2'),
-         url("fonts/PixelGame.woff") format('woff'),
-         url("fonts/PixelGame.otf") format('opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Game Paused DEMO';
-    src: url("fonts/GamePausedDemo.woff2") format('woff2'),
-         url("fonts/GamePausedDemo.woff") format('woff'),
-         url("fonts/GamePausedDemo.otf") format('opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
 
 :root {
   /* change the values below to your colors from your palette */
@@ -190,4 +173,21 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+@font-face {
+  font-family: 'Pixel Game';
+  src: url("fonts/PixelGame.woff2") format('woff2'),
+       url("fonts/PixelGame.woff") format('woff'),
+       url("fonts/PixelGame.otf") format('opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Game Paused DEMO';
+  src: url("fonts/GamePausedDemo.woff2") format('woff2'),
+       url("fonts/GamePausedDemo.woff") format('woff'),
+       url("fonts/GamePausedDemo.otf") format('opentype'); 
+  font-weight: normal;
+  font-style: normal;
 }
