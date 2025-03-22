@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'pixel_game';
+    src: url('C:\Users\daneyboy\Documents\wdd130\personal_site\fonts\Pixel Game.otf') format('otf'),
+         url('C:\Users\daneyboy\Documents\wdd130\personal_site\fonts\Pixel Game.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    font-family: 'pixel_game', sans-serif;
+  }
+  
+  head {
+    font-family: 'pixel_game', serif;
+  }
