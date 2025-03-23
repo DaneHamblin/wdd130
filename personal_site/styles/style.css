@@ -50,6 +50,17 @@ header {
     height: auto;
 }
 
+.logo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
 nav a {
     color: #ecf0f1;
     text-decoration: none;
@@ -115,6 +126,10 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
+    .logo {
+        max-width: 120px;
+        border-radius: 6px;
+    }
     #games {
         flex-direction: column;
     }
