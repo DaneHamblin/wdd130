@@ -225,6 +225,96 @@ footer a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Page 3 Changes */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h3 {
+    font-family: 'pixel_game', serif;
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.join-content {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.join-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.position-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.position-item {
+    background-color: #f8f9fa;
+    border-left: 4px solid #f1c40f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.position-item:hover {
+    transform: translateY(-5px);
+    background-color: #f1f3f5;
+}
+
+.position-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-family: 'pixel_game', serif;
+}
+
+.page3img {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.join_our_team_img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: #2c3e50;
+    border-color: #f1c40f;
+}
+
+
 /* media adjustments */
 @media (max-width: 768px) {
     .home-grid {
@@ -270,5 +360,25 @@ footer a:hover {
 
     h2 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .position-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .join-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    .join-content p {
+        font-size: 1rem;
     }
 }
