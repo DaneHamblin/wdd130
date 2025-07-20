@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardew Valley Expanded Completion Checklist</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #6b4226;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #8b4513;
+            border-bottom: 2px solid #8b4513;
+            padding-bottom: 5px;
+        }
+        .category {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .task {
+            margin: 8px 0;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .task input {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .task label {
+            font-size: 1.1em;
+        }
+        .task input:checked + label {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .progress {
+            height: 30px;
+            background-color: #8b4513;
+            width: 0%;
+            transition: width 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .save-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #6b4226;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .save-btn:hover {
+            background-color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stardew Valley Expanded Completion Checklist</h1>
+    
+    <div class="progress-bar">
+        <div class="progress" id="progress">0%</div>
+    </div>
+    
+    <button class="save-btn" onclick="saveProgress()">Save Progress</button>
+    
+    <div class="category">
+        <h2>1. Farm & Main Progression</h2>
+        <div class="task"><input type="checkbox" id="farmhouse"><label for="farmhouse">Upgrade Farmhouse to max level</label></div>
+        <div class="task"><input type="checkbox" id="buildings"><label for="buildings">Build all Farm Buildings (Barn, Coop, Shed, etc.)</label></div>
+        <div class="task"><input type="checkbox" id="shed"><label for="shed">Unlock Grandpa’s Shed</label></div>
+        <div class="task"><input type="checkbox" id="community"><label for="community">Complete the Community Center or Joja Warehouse</label></div>
+        <div class="task"><input type="checkbox" id="garden"><label for="garden">Unlock the Garden Pot Recipe (from Gunther)</label></div>
+        <div class="task"><input type="checkbox" id="junimo"><label for="junimo">Unlock the Junimo Woods</label></div>
+    </div>
+    
+    <div class="category">
+        <h2>2. New Locations & Unlockables</h2>
+        <div class="task"><input type="checkbox" id="vineyard"><label for="vineyard">Unlock Aurora Vineyard (after meeting Sophia)</label></div>
+        <div class="task"><input type="checkbox" id="highlands"><label for="highlands">Unlock Highlands (after Railroad repair)</label></div>
+        <div class="task"><input type="checkbox" id="outpost"><label for="outpost">Unlock Castle Village Outpost</label></div>
+        <div class="task"><input type="checkbox" id="blacksmith"><label for="blacksmith">Unlock Scarlett’s Blacksmith Shop</label></div>
+        <div class="task"><input type="checkbox" id="lance"><label for="lance">Unlock Lance’s Room in Adventurer’s Guild</label></div>
+    </div>
+    
+    <div class="category">
+        <h2>3. NPCs & Relationships</h2>
+        <div class="task"><input type="checkbox" id="befriend"><label for="befriend">Befriend all new SVE characters</label></div>
+        <div class="task"><input type="checkbox" id="events"><label for="events">View all Heart Events for new NPCs</label></div>
+        <div class="task"><input type="checkbox" id="marry"><label for="marry">Marry an SVE bachelor/bachelorette</label></div>
+        <div class="task"><input type="checkbox" id="claire"><label for="claire">Complete Claire’s Apprentice Questline</label></div>
+        <div class="task"><input type="checkbox" id="morgan"><label for="morgan">Complete Morgan’s Highlands Questline</label></div>
+    </div>
+    
+    <div class="category">
+        <h2>4. Quests & Special Objectives</h2>
+        <div class="task"><input type="checkbox" id="dark"><label for="dark">Complete "A Dark Reagent" Quest</label></div>
+        <div class="task"><input type="checkbox" id="pirate"><label for="pirate">Complete "The Pirate’s Wife" Quest</label></div>
+        <div class="task"><input type="checkbox" id="hero"><label for="hero">Complete "The Stardew Hero’s Forgotten Past" Quest</label></div>
+        <div class="task"><input type="checkbox" id="junimo-quest"><label for="junimo-quest">Complete "The Junimo’s Struggle" Quest</label></div>
+        <div class="task"><input type="checkbox" id="qi"><label for="qi">Complete "The Mysterious Mr. Qi" Questline</label></div>
+        <div class="task"><input type="checkbox" id="goblin"><label for="goblin">Complete "The Goblin Problem" Quest</label></div>
+    </div>
+    
+    <div class="category">
+        <h2>5. Combat & Exploration</h2>
+        <div class="task"><input type="checkbox" id="highlands-dungeon"><label for="highlands-dungeon">Defeat the Highlands Danger Dungeon</label></div>
+        <div class="task"><input type="checkbox" id="volcano"><label for="volcano">Complete the Volcano Dungeon (SVE additions)</label></div>
+        <div class="task"><input type="checkbox" id="galaxy"><label for="galaxy">Obtain the Galaxy Soul</label></div>
+        <div class="task"><input type="checkbox" id="hero-soul"><label for="hero-soul">Obtain the Hero’s Soul</label></div>
+        <div class="task"><input type="checkbox" id="walnuts"><label for="walnuts">Collect all Golden Walnuts (SVE included)</label></div>
+    </div>
+    
+    <div class="category">
+        <h2>6. Collections & Crafting</h2>
+        <div class="task"><input type="checkbox" id="crops"><label for="crops">Ship every new SVE crop</label></div>
+        <div class="task"><input type="checkbox" id="recipes"><label for="recipes">Cook all new SVE recipes</label></div>
+        <div class="task"><input type="checkbox" id="crafting"><label for="crafting">Craft all new SVE items</label></div>
+        <div class="task"><input type="checkbox" id="fish"><label for="fish">Catch all new fish (Highlands & Aurora Vineyard)</label></div>
+        <div class="task"><input type="checkbox" id="museum"><label for="museum">Complete the Museum Collection (SVE artifacts)</label></div>
+    </div>
+    
+    <div class="category">
+        <h2>7. Achievements & Extras</h2>
+        <div class="task"><input type="checkbox" id="perfection"><label for="perfection">Reach Perfection (100% completion)</label></div>
+        <div class="task"><input type="checkbox" id="decorate"><label for="decorate">Decorate Aurora Vineyard (if married to Sophia)</label></div>
+        <div class="task"><input type="checkbox" id="music"><label for="music">Unlock all new music tracks</label></div>
+        <div class="task"><input type="checkbox" id="secrets"><label for="secrets">Find all hidden secrets (books, Easter eggs)</label></div>
+    </div>
+    
+    <button class="save-btn" onclick="saveProgress()">Save Progress</button>
+    
+    <script>
+        // Load saved progress
+        function loadProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                const saved = localStorage.getItem(checkbox.id);
+                if (saved === 'true') {
+                    checkbox.checked = true;
+                }
+            });
+            updateProgress();
+        }
+        
+        // Save progress to localStorage
+        function saveProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                localStorage.setItem(checkbox.id, checkbox.checked);
+            });
+            alert("Progress saved!");
+        }
+        
+        // Update progress bar
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const total = checkboxes.length;
+            let completed = 0;
+            
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) completed++;
+            });
+            
+            const percent = Math.round((completed / total) * 100);
+            const progressBar = document.getElementById('progress');
+            progressBar.style.width = percent + '%';
+            progressBar.textContent = percent + '%';
+        }
+        
+        // Update progress when a checkbox is clicked
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+        
+        // Load progress when page loads
+        window.onload = loadProgress;
+    </script>
+</body>
+</html>
